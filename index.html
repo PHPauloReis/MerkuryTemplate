@@ -21,7 +21,13 @@
                     <img src="assets/images/brand.png" title="Brand of Merkury">
                 </figure>
 
-                <ul class="main-menu">
+                <div class="mobile-bt">
+                    <a class="icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                <ul class="main-menu hide">
                     <li><a href="register">Register</a></li>
                     <li class="active"><a href="login">Login</a></li>
                 </ul>
@@ -31,7 +37,9 @@
 
         <main>
 
-            <h1 class="page-title">Welcome <span>Back!</span></h1>
+            <header>
+                <h1 class="page-title">Welcome <span>Back!</span></h1>
+            </header>
 
             <div class="form-container">
                 <form action="" method="POST">
@@ -54,6 +62,24 @@
         </main>
 
     </div>
+
+    <script>
+    
+    var showing_mobile_menu = false;
+    var main_menu = document.querySelector('.main-menu');
+    var mobile_bt = document.querySelector('.mobile-bt');
+
+    mobile_bt.addEventListener('click', function(event) {
+        if(showing_mobile_menu) {
+            main_menu.classList.add('hide');
+        } else {
+            main_menu.classList.remove('hide');
+        }
+
+        showing_mobile_menu = !showing_mobile_menu;
+    });
+
+    </script>
     
 </body>
 </html>

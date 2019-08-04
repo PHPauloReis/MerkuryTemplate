@@ -1,47 +1,37 @@
 body {
-    background-color: #e6e9ef;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100vh;
-}
-
-.login-container {
-    width: 1219px;
     background-color: #FFF;
-    height: 851px;
 }
 
 .navbar {
     font-family: 'Roboto', sans-serif;
     background-color: #0e1a35;
     color: #FFF;
-    height: 147px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
 }
 
 .brand {
-    margin-left: 45px;
-    margin-top: 37px;
+    width: 150px;
+    margin: 20px 45px 15px 20px;
+}
+
+.brand img {
+    width: 100%;
 }
 
 .main-menu {
-    font-size: 24px;
+    width: 100%;
+    font-size: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 147px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .main-menu li {
-    display: list-item;
-    border-bottom: 10px solid #0e1a35;
+    border-bottom: 5px solid #0e1a35;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,38 +43,50 @@ body {
 }
 
 .main-menu a {
-    padding: 55px 51px;
+    width: 100%;
+    padding: 15px 15px;
     color: #FFF;
     text-decoration: none;
-    padding-left: 51px;
-    padding-right: 51px;
+    padding-left: 20px;
 }
 
 main {
-    padding-top: 97px;
+    padding: 20px;
 }
 
 main .page-title {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 40px;
     color: #8492af;
-    margin-bottom: 112px;
+    margin: 40px auto;
 }
 
 main .page-title span {
     color: #5584ff;
 }
 
+.mobile-bt {
+    padding: 26px 25px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.mobile-bt a {
+    color: #FFF;
+    font-size: 24px;
+}
+
 .form-container {
-    width: 577px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .form-group {
-    width: 100%;
-    margin-bottom: 38px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 38px;    
 }
 
 .form-control {
@@ -117,18 +119,102 @@ input.form-control::placeholder {
 }
 
 button.form-control {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    width: 387px;
+    width: 100%;
     background-color: #5584ff;
     color: #FFF;
     border: 0;
     border-radius: 35px;
-    padding: 20px
+    padding: 10px
 }
 
 button.form-control.login-icon {
     background-image: url(../images/arrow-right.png);
     background-repeat: no-repeat;
-    background-position: right 50px bottom 28px;
+    background-position: right 30px bottom 17px;
 }
+
+/**
+ * Regras para telas maiores que 800 px
+ */
+
+ @media (min-width: 800px) {
+
+    body {
+        background-color: #e6e9ef;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .login-container {
+        width: 1219px;
+        background-color: #FFF;
+        height: 851px;
+    }
+
+    .navbar {
+        height: 147px;
+    }
+
+    .brand {
+        width: 233px;
+        margin-left: 45px;
+        margin-top: 37px;
+    }
+
+    .main-menu {
+        width: auto;
+        font-size: 24px;
+        height: 147px;
+        display: flex !important;
+        flex-direction: row;
+    }
+    
+    .main-menu li {
+        border-bottom: 10px solid #0e1a35;
+    }
+
+    .main-menu a {
+        padding: 55px 51px;
+        text-decoration: none;
+        padding-left: 51px;
+        padding-right: 51px;
+    }
+
+    .mobile-bt {
+        display: none;
+    }
+
+    main {
+        padding-top: 97px;
+    }
+
+    main .page-title {
+        font-size: 48px;
+        margin-bottom: 112px;
+    }
+
+    .form-container {
+        width: 577px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    button.form-control {
+        font-size: 24px;
+        width: 387px;
+        height: 71px;
+    }
+
+    button.form-control.login-icon {
+        background-position: right 50px bottom 28px;
+    }
+
+ }

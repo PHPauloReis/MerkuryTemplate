@@ -1,0 +1,134 @@
+body {
+    background-color: #e6e9ef;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 1219px;
+    background-color: #FFF;
+    height: 851px;
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e1a35;
+    color: #FFF;
+    height: 147px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+}
+
+.brand {
+    margin-left: 45px;
+    margin-top: 37px;
+}
+
+.main-menu {
+    font-size: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 147px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-menu li {
+    display: list-item;
+    border-bottom: 10px solid #0e1a35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu li.active,
+.main-menu li:hover {
+    border-bottom-color: #5584ff;
+}
+
+.main-menu a {
+    padding: 55px 51px;
+    color: #FFF;
+    text-decoration: none;
+    padding-left: 51px;
+    padding-right: 51px;
+}
+
+main {
+    padding-top: 97px;
+}
+
+main .page-title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    color: #8492af;
+    margin-bottom: 112px;
+}
+
+main .page-title span {
+    color: #5584ff;
+}
+
+.form-container {
+    width: 577px;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.form-control {
+    font-family: 'Roboto', sans-serif;
+}
+
+input.form-control {
+    font-size: 24px;
+    font-weight: 300;
+    color: #666;
+    width: 100%;
+    padding: 17px;
+    padding-left: 60px;
+    border: none;
+    border-bottom: 1px solid #d4d9e3;
+    background-repeat: no-repeat;
+    background-position: 0 15px;
+}
+
+input.form-control.username-icon {
+    background-image: url(../images/icon-user.png);
+}
+
+input.form-control.password-icon {
+    background-image: url(../images/icon-password.png);
+}
+
+input.form-control::placeholder {
+    color: #8492af;
+}
+
+button.form-control {
+    font-size: 24px;
+    font-weight: 700;
+    width: 387px;
+    background-color: #5584ff;
+    color: #FFF;
+    border: 0;
+    border-radius: 35px;
+    padding: 20px
+}
+
+button.form-control.login-icon {
+    background-image: url(../images/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: right 50px bottom 28px;
+}
